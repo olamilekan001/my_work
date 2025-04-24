@@ -3,6 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgba(242, 240, 190, 0.345);
+}
 .btn {
   height: 40px;
   width: 120px;
@@ -19,7 +24,8 @@
   align-items: center;
   height: 90px;
   width: 100%;
-  position: fixed;
+  position: sticky;
+  top: 0;
 }
 
 .nav-img {
@@ -88,22 +94,56 @@
 /* About styling*/
 .about {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  gap: 20px;
   align-items: center;
   margin-top: 50px;
   margin-bottom: 100px;
+  margin-left: 30px;
+}
+
+.about-img {
+  border: 1px solid pink;
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+}
+.about-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-content {
+  border: 1px solid pink;
+  height: 400px;
+  width: 50rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.about-content-text {
+  font-size: 30px;
+  line-height: 40px;
+  padding: 15px;
+  text-align: center;
+}
+.about-content-intro {
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .about-education-items {
-  margin-top: 40px;
+  margin: 40px;
 }
 
 .about-edu {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  justify-content: center;
 }
 .about-edu-items {
   border: 1px solid black;
@@ -118,22 +158,9 @@
   padding-top: 30px;
 }
 .about-edu-items:hover {
-  box-shadow: 8px 0 5px 0 black;
+  box-shadow: 5px 0 5px 0 black;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.about-tools {
-  margin-top: 20px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-.about-tools-item {
-  border: 1px solid rgb(242, 10, 180);
-  height: 60px;
-  width: 60px;
-  padding: 15px;
-  border-radius: 10px;
-}
-
 .about-edu-content {
   padding-top: 20px;
   padding-left: 20px;
@@ -143,6 +170,25 @@
 }
 .about-edu-content h4 {
   padding-top: 16px;
+}
+.about-tools {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.about-tools-item {
+  border: 1px solid rgb(242, 10, 180);
+  height: 60px;
+  width: 60px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.about-tools-item:hover {
+  box-shadow: 5px 0 5px rgb(0, 0, 0);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  height: 80px;
+  width: 80px;
 }
 
 /* services styling */
