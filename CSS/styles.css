@@ -17,17 +17,32 @@ body {
   }
   .service-content:hover {
     box-shadow: 5px 0 5px 0 white;
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: ease-in-out 0.9s;
   }
   .about-edu-items {
     border: 1px solid white;
   }
   .about-edu-items:hover {
     box-shadow: 5px 0 5px 0 white;
+    transition: ease-in-out 0.9s;
   }
   .special-btn {
     border: 1px solid white;
     color: white;
+  }
+  .work-portfolio-content-item p,
+  h4 {
+    color: black;
+  }
+  .work-portfolio-content:hover {
+    box-shadow: 5px 5px 5px white;
+    transition: ease-in-out 0.9s;
+  }
+  .footer-name {
+    background-color: white;
+  }
+  .footer-item {
+    color: black;
   }
 }
 .btn {
@@ -138,6 +153,16 @@ body {
   width: 400px;
   border-radius: 10px;
 }
+
+.about-img:hover {
+  box-shadow: 10px 0 10px 0 black;
+  transition: ease-in-out 0.9s;
+}
+
+.about-content:hover {
+  box-shadow: 5px 0 5px black;
+  transition: ease-in-out 0.9s;
+}
 .about-img img {
   height: 100%;
   width: 100%;
@@ -156,7 +181,7 @@ body {
   padding: 20px;
 }
 .about-content-text {
-  font-size: 30px;
+  font-size: 20px;
   line-height: 40px;
   padding: 15px;
   text-align: center;
@@ -177,7 +202,7 @@ body {
   justify-content: center;
 }
 .about-edu-items {
-  border: 1px solid black;
+  border: 2px solid white;
   margin-right: 50px;
   height: 250px;
   width: 300px;
@@ -190,7 +215,7 @@ body {
 }
 .about-edu-items:hover {
   box-shadow: 5px 0 5px 0 black;
-  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: ease-in-out 0.9s;
 }
 .about-edu-content {
   padding-top: 20px;
@@ -207,6 +232,7 @@ body {
   display: flex;
   gap: 30px;
   align-items: center;
+  margin-left: 22.5rem;
 }
 .about-tools-item {
   border: 1px solid rgb(242, 10, 180);
@@ -217,9 +243,9 @@ body {
 }
 .about-tools-item:hover {
   box-shadow: 5px 0 5px rgb(0, 0, 0);
-  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   height: 80px;
   width: 80px;
+  transition: ease-in-out 0.9s;
 }
 
 /* services styling */
@@ -248,7 +274,7 @@ body {
 }
 
 .service-content {
-  border: 1px solid black;
+  border: 1px solid white;
   height: 300px;
   width: 300px;
   margin-right: 50px;
@@ -256,7 +282,7 @@ body {
 }
 .service-content:hover {
   box-shadow: 5px 0 5px rgb(0, 0, 0);
-  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: ease-in-out 0.9s;
 }
 .service-content-item {
   /*border: 1px solid black;*/
@@ -294,19 +320,26 @@ body {
 }
 .work-portfolio {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
+  gap: 20px;
   align-items: center;
-  margin: 0 10px 10px 10px;
+  margin: 0 0 0 100px;
 }
 
 .work-portfolio-content {
-  border: 1px solid black;
   height: 250px;
   width: 250px;
   border-radius: 10px;
   text-align: center;
-  margin-right: 20px;
-  background-color: lime;
+  margin-left: 5px;
+  background-image: url(https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+  background-position: center;
+}
+
+.work-portfolio-content:hover {
+  box-shadow: 5px 0 5px chocolate;
+  transition: ease-in-out 0.9s;
 }
 
 .work-portfolio-content-item {
@@ -315,11 +348,17 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  width: 200px;
+  width: 220px;
   margin-top: 130px;
-  margin-left: 13px;
+  margin-left: 15px;
   border-radius: 8px;
   background-color: white;
+  box-shadow: 5px 0 5px 3px black;
+}
+.work-portfolio-content-item a {
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
 }
 
 .work-portfolio-btn {
@@ -478,6 +517,11 @@ body {
     width: 100%px;
     margin-left: 1px;
   }
+  .about-content-text {
+    font-size: 15px;
+    padding: 5px;
+    line-height: 35px;
+  }
   .about-edu-content {
     width: 200px;
     padding-left: 5px;
@@ -491,6 +535,9 @@ body {
     align-items: center;
     gap: 20px;
     margin-left: 45px;
+  }
+  .about-tools {
+    margin-left: 1.5rem;
   }
   .about-tools-item {
     height: 40px;
@@ -539,6 +586,9 @@ body {
   }
   .work-portfolio-content {
     padding-left: 10px;
+  }
+  .work-portfolio-content-item {
+    margin-left: 5px;
   }
   .contact-intro {
     margin: 45px;
